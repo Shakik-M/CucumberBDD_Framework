@@ -7,7 +7,6 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {
                 "json:target/cucumber.json"
         }
-
 )
 
 public class testRunner extends AbstractTestNGCucumberTests {
