@@ -1,9 +1,7 @@
 package stepDef;
 
 import base.setUp;
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import sun.lwawt.macosx.CSystemTray;
 
 public class Hook extends setUp {
     public static String url;
@@ -33,8 +31,4 @@ public class Hook extends setUp {
 
     }
 
-    @After
-    public void endTest(){
-//        driver.close();
-    }
 }
