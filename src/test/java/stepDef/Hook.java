@@ -1,6 +1,7 @@
 package stepDef;
 
 import base.setUp;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hook extends setUp {
@@ -19,7 +20,7 @@ public class Hook extends setUp {
             case "qa":
                 url = "http://qa.taltektc.com";
                 break;
-            case "stg":
+            case "stage":
                 url = "http://stage.taltektc.com";
                 break;
             case "prod":
@@ -28,7 +29,10 @@ public class Hook extends setUp {
 
         }
         driver.get(url);
-
     }
 
+    @After
+    public void endTest(){
+//        driver.close();
+    }
 }
