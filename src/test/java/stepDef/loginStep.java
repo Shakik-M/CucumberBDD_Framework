@@ -19,12 +19,12 @@ public class loginStep extends setUp {
 
     @And("I enter valid email address")
     public void iEnterValidEmailAddress() {
-        lp.enterEmailAddress("testQAenv@test.com");
+        lp.enterEmailAddress(Hook.existingStudentEmail);
     }
 
     @And("I enter valid password")
     public void iEnterValidPassword() {
-        lp.enterValidPassword("$tudent@123");
+        lp.enterValidPassword(Hook.existingStudentPassword);
     }
 
     @When("I click on the Login Button")
