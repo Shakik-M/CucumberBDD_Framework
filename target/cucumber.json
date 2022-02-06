@@ -1,1 +1,111 @@
-[{"line":1,"elements":[{"start_timestamp":"2022-02-05T18:16:43.670Z","before":[{"result":{"error_message":"java.lang.NullPointerException\n\tat base.setUp.setUpBrowser(setUp.java:17)\n\tat stepDef.Hook.startTest(Hook.java:15)\n","duration":5000000,"status":"failed"},"match":{"location":"stepDef.Hook.startTest()"}}],"line":4,"name":"Login with valid email and password","description":"","id":"login-test;login-with-valid-email-and-password","after":[{"result":{"status":"passed"},"match":{"location":"stepDef.Hook.endTest()"}}],"type":"scenario","keyword":"Scenario","steps":[{"result":{"status":"skipped"},"line":5,"name":"I am at the TalentTek homepage","match":{"location":"stepDef.loginStep.iAmAtTheTalentTekHomepage()"},"keyword":"Given "},{"result":{"status":"skipped"},"line":6,"name":"I enter valid email address","match":{"location":"stepDef.loginStep.iEnterValidEmailAddress()"},"keyword":"And "},{"result":{"status":"skipped"},"line":7,"name":"I enter valid password","match":{"location":"stepDef.loginStep.iEnterValidPassword()"},"keyword":"And "},{"result":{"duration":3000000,"status":"skipped"},"line":8,"name":"I click on the Login Button","match":{"location":"stepDef.loginStep.iClickOnTheLoginButton()"},"keyword":"When "},{"result":{"status":"skipped"},"line":9,"name":"I should be able to login successfully","match":{"location":"stepDef.loginStep.iShouldBeAbleToLoginSuccessfully()"},"keyword":"Then "}],"tags":[{"name":"@login"}]}],"name":"Login Test","description":"","id":"login-test","keyword":"Feature","uri":"file:src/test/java/features/login.feature","tags":[]}]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-06T02:19:12.944Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29296934000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid email and password",
+        "description": "",
+        "id": "login-test;login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 50000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54773000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at the TalentTek homepage",
+            "match": {
+              "location": "stepDef.loginStep.iAmAtTheTalentTekHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 449138000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid email address",
+            "match": {
+              "location": "stepDef.loginStep.iEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepDef.loginStep.iEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the Login Button",
+            "match": {
+              "location": "stepDef.loginStep.iClickOnTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be able to login successfully",
+            "match": {
+              "location": "stepDef.loginStep.iShouldBeAbleToLoginSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Test",
+    "description": "",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]
