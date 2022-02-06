@@ -3,14 +3,24 @@ package stepDef;
 import base.setUp;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.messages.internal.com.google.common.base.Strings;;
 
 public class Hook extends setUp {
     public static String url;
+    public static String existingStudentEmail;
+    public static String existingStudentPassword;
     public static String driverType = System.getProperty("browser");
     public static String envData = System.getProperty("env");
 
     @Before
     public void startTest(){
+
+        if (Strings.isNullOrEmpty(driverType)){
+            driverType = "chrome";
+        }
+        if (Strings.isNullOrEmpty(envData)){
+            envData = "qa";
+        }
 
         driver = setUpBrowser(driverType);
 
