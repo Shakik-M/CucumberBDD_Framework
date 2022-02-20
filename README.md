@@ -12,3 +12,7 @@ ctrl + I
 mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags="@login"
 mvn verify -Denv=stage -Dbrowser=chrome -Dcucumber.filter.tags="@login"
 mvn verify -Denv=prod -Dbrowser=chrome -Dcucumber.filter.tags="@login"
+
+mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags="@signup"
+mvn verify -Denv=stage -Dbrowser=chrome -Dcucumber.filter.tags="@signup"
+mvn verify -Denv=prod -Dbrowser=chrome -Dcucumber.filter.tags="@signup"

@@ -1,8 +1,0 @@
-stepDef/signupStep.class
-stepDef/loginStep.class
-stepDef/Hook.class
-stepDef/test.class
-pageObject/loginPage.class
-pageObject/signupPage.class
-base/setUp.class
-TestRunner.class
