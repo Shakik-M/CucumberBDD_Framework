@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-06T21:29:24.218Z",
+        "start_timestamp": "2022-02-20T02:40:56.735Z",
         "before": [
           {
             "result": {
-              "duration": 10103983000,
+              "duration": 9800475000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "Login with valid email and password",
+        "name": "SignUp with valid student information",
         "description": "",
-        "id": "login-test;login-with-valid-email-and-password",
+        "id": "signup-test;signup-with-valid-student-information",
         "after": [
           {
             "result": {
-              "duration": 60000,
+              "duration": 77000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 62067000,
+              "duration": 65174000,
               "status": "passed"
             },
             "line": 5,
@@ -47,65 +47,77 @@
           },
           {
             "result": {
-              "duration": 213096000,
+              "duration": 639662000,
               "status": "passed"
             },
             "line": 6,
-            "name": "I enter valid email address",
+            "name": "I click on Create new account button",
             "match": {
-              "location": "stepDef.loginStep.iEnterValidEmailAddress()"
+              "location": "stepDef.signupStep.iClickOnCreateNewAccountButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 184672000,
+              "duration": 1415495000,
               "status": "passed"
             },
             "line": 7,
-            "name": "I enter valid password",
+            "name": "I enter valid student information",
             "match": {
-              "location": "stepDef.loginStep.iEnterValidPassword()"
+              "location": "stepDef.signupStep.iEnterValidStudentInformation()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 113874000,
+              "duration": 98922000,
               "status": "passed"
             },
             "line": 8,
-            "name": "I click on the Login Button",
+            "name": "I agree with terms and condition",
             "match": {
-              "location": "stepDef.loginStep.iClickOnTheLoginButton()"
+              "location": "stepDef.signupStep.iAgreeWithTermsAndCondition()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98734000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on submit button",
+            "match": {
+              "location": "stepDef.signupStep.iClickOnSubmitButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 411724000,
+              "duration": 237328000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I should be able to login successfully",
+            "line": 10,
+            "name": "I will be able to create account successfully",
             "match": {
-              "location": "stepDef.loginStep.iShouldBeAbleToLoginSuccessfully()"
+              "location": "stepDef.signupStep.iWillBeAbleToCreateAccountSuccessfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@signup"
           }
         ]
       }
     ],
-    "name": "Login Test",
+    "name": "SignUp Test",
     "description": "",
-    "id": "login-test",
+    "id": "signup-test",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/login.feature",
+    "uri": "file:src/test/java/features/signup.feature",
     "tags": []
   }
 ]
