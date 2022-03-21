@@ -3,7 +3,10 @@ package stepDef;
 import base.setUp;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.messages.internal.com.google.common.base.Strings;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class Hook extends setUp {
     public static String url;
@@ -49,7 +52,15 @@ public class Hook extends setUp {
     }
 
     @After
-    public void endTest(){
-//        driver.close();
+    public void endTest(Scenario scenario){
+        try {
+            if (scenario.isFailed()){
+                final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                // embed it in the report.
+                scenario.attach(screenshot, "image/png", scenario.getName());
+            }
+        } finally {
+            driver.quit();
+        }
     }
 }
